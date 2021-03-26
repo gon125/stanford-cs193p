@@ -7,8 +7,8 @@
 
 import Foundation
 
-class EmojiMemoryGame {
-    private var model = EmojiMemoryGame.createMemoryGame()
+class EmojiMemoryGame: ObservableObject {
+    @Published private var model = EmojiMemoryGame.createMemoryGame()
     
     var cards: [MemoryGame<String>.Card] {
         return model.cards
