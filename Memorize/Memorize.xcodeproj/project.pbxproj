@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F35CFDBC2604229100D8B519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35CFDBB2604229100D8B519 /* AppDelegate.swift */; };
 		F35CFDBE2604229100D8B519 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35CFDBD2604229100D8B519 /* SceneDelegate.swift */; };
-		F35CFDC02604229100D8B519 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35CFDBF2604229100D8B519 /* ContentView.swift */; };
+		F35CFDC02604229100D8B519 /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35CFDBF2604229100D8B519 /* EmojiMemoryGameView.swift */; };
 		F35CFDC22604229100D8B519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35CFDC12604229100D8B519 /* Assets.xcassets */; };
 		F35CFDC52604229100D8B519 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F35CFDC42604229100D8B519 /* Preview Assets.xcassets */; };
 		F35CFDC82604229100D8B519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F35CFDC62604229100D8B519 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		F35CFDB82604229100D8B519 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F35CFDBB2604229100D8B519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F35CFDBD2604229100D8B519 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F35CFDBF2604229100D8B519 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F35CFDBF2604229100D8B519 /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
 		F35CFDC12604229100D8B519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F35CFDC42604229100D8B519 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F35CFDC72604229100D8B519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 				F35CFDBD2604229100D8B519 /* SceneDelegate.swift */,
 				F35CFDD42604233800D8B519 /* MemoryGame.swift */,
 				F35CFDD8260423CC00D8B519 /* EmojiMemoryGame.swift */,
-				F35CFDBF2604229100D8B519 /* ContentView.swift */,
+				F35CFDBF2604229100D8B519 /* EmojiMemoryGameView.swift */,
 				F35CFDC12604229100D8B519 /* Assets.xcassets */,
 				F35CFDC62604229100D8B519 /* LaunchScreen.storyboard */,
 				F35CFDC92604229100D8B519 /* Info.plist */,
@@ -154,7 +154,7 @@
 				F35CFDBC2604229100D8B519 /* AppDelegate.swift in Sources */,
 				F35CFDBE2604229100D8B519 /* SceneDelegate.swift in Sources */,
 				F35CFDD52604233800D8B519 /* MemoryGame.swift in Sources */,
-				F35CFDC02604229100D8B519 /* ContentView.swift in Sources */,
+				F35CFDC02604229100D8B519 /* EmojiMemoryGameView.swift in Sources */,
 				F35CFDD9260423CC00D8B519 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
