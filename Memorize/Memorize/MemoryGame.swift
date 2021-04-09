@@ -8,20 +8,7 @@
 import Foundation
 
 struct MemoryGame<CardContent> where CardContent: Equatable {
-    var cards: [Card]
-    
-    var indexOfTheOneAndOnlyFaceUpCard: Int? {
-        get { cards.indices.filter { cards[$0].isFaseUp }.only }
-        set {
-            cards.indices.forEach {
-                if $0 == newValue {
-                    cards[$0].isFaseUp = true
-                } else {
-                    cards[$0].isFaseUp = false
-                }
-            }
-        }
-    }
+    private(set) var cards: [Card]
     
     mutating func choose(card: Card) {
         print("card chosen: \(card)")
@@ -53,5 +40,19 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
         var isMatched: Bool = false
         var content: CardContent
         var id: Int
+    }
+    
+    // MARK: - Private
+    var indexOfTheOneAndOnlyFaceUpCard: Int? {
+        get { cards.indices.filter { cards[$0].isFaseUp }.only }
+        set {
+            cards.indices.forEach {
+                if $0 == newValue {
+                    cards[$0].isFaseUp = true
+                } else {
+                    cards[$0].isFaseUp = false
+                }
+            }
+        }
     }
 }
