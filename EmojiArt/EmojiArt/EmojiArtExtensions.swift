@@ -2,17 +2,21 @@
 //  EmojiArtExtensions.swift
 //  EmojiArt
 //
-//  Created by Geonhyeong LIm on 2021/04/23.
+//  Created by CS193p Instructor on 4/27/20.
+//  Copyright © 2020 Stanford University. All rights reserved.
 //
+
 import SwiftUI
 
 extension Collection where Element: Identifiable {
     func firstIndex(matching element: Element) -> Self.Index? {
         firstIndex(where: { $0.id == element.id })
     }
-    
+    // note that contains(matching:) is different than contains()
+    // this version uses the Identifiable-ness of its elements
+    // to see whether a member of the Collection has the same identity
     func contains(matching element: Element) -> Bool {
-        contains(where: { $0.id == element.id })
+        self.contains(where: { $0.id == element.id })
     }
 }
 
@@ -23,6 +27,7 @@ extension Data {
 
 extension URL {
     var imageURL: URL {
+        // check to see if there is an embedded imgurl reference
         for query in query?.components(separatedBy: "&") ?? [] {
             let queryComponents = query.components(separatedBy: "=")
             if queryComponents.count == 2 {
@@ -31,7 +36,8 @@ extension URL {
                 }
             }
         }
-        
+        // this snippet supports the demo in Lecture 14
+        // see storeInFilesystem below
         if isFileURL {
             var url = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first
             url = url?.appendingPathComponent(self.lastPathComponent)
