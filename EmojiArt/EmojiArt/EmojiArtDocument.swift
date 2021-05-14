@@ -10,7 +10,11 @@ import SwiftUI
 class EmojiArtDocument: ObservableObject {
     static let palette: String = "⭐️🌧🍎🌍🥨⚾️"
     
-    @Published private var emojiArt: EmojiArt {
+    //@Published
+    private var emojiArt: EmojiArt {
+        willSet {
+            objectWillChange.send()
+        }
         didSet {
             UserDefaults.standard.set(emojiArt.json, forKey: EmojiArtDocument.untitled)
         }
