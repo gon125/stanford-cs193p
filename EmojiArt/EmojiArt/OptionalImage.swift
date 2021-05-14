@@ -12,8 +12,8 @@ struct OptionalImage: View {
     
     var body: some View {
         Group {
-            if uiImage != nil {
-                Image(uiImage: uiImage!)
+            if let uiImage = uiImage {
+                Image(uiImage: uiImage)
             }
         }
     }
